@@ -1,0 +1,34 @@
+.Header {
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 142px;
+    padding-right: 4rem;
+}
+
+.Header__navigation li {
+    list-style: none;
+}
+
+.Header__navigation__list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Header__navigation__list > li {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Header__navigation__list > li ul {
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 300px;
+}
+
+.Header__navigation__list > li ul > li {
+    flex: 1 1 auto;
+}
+
+.Header__logo {
+    background-color: #ff6600;
+}
