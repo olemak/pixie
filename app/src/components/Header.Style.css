@@ -3,6 +3,7 @@
     flex-flow: row nowrap;
     max-height: 142px;
     padding-right: 4rem;
+    position: relative;
 }
 
 .Header__navigation li {
@@ -31,4 +32,12 @@
 
 .Header__logo {
     background-color: #ff6600;
+}
+
+.Header .Model__SubMenu {
+    position: absolute;
+    border: 1px solid red;
+    bottom: -50%;
+    left: 0;
+    right: 0;
 }
