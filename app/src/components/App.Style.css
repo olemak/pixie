@@ -2,16 +2,34 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    height: 96vh;
-    
-    border: 1px solid blue;
- 
+    height: 97vh;
+
     display: flex;
     flex-flow: column wrap;
-    align-items:     
+    align-items: space-between;     
 }
 
 .App > * {
-    border: 1px solid red;
     flex: 1 1 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.App > header {
+    background-color: #333;
+    max-height: 10%;
+    color: #fff;
+}
+
+.App > main {
+    border: 1px solid #bbb;
+}
+
+.App > footer {
+    background-color: #bbb;
+    max-height: 10%;
 }
