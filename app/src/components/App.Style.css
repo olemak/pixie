@@ -1,0 +1,17 @@
+.App {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 96vh;
+    
+    border: 1px solid blue;
+ 
+    display: flex;
+    flex-flow: column wrap;
+    align-items:     
+}
+
+.App > * {
+    border: 1px solid red;
+    flex: 1 1 auto;
+}
