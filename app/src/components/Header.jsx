@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 import "./Header.Style.css";
 import logo from "../logo.svg";
@@ -14,7 +14,6 @@ class Header extends Component {
   render() {
     return (
       <header className="Header">
-        <Router>
           <nav className="Header__navigation">
             <ul className="Header__navigation__list">
               <li className="Header__navigation__list__first">
@@ -37,9 +36,9 @@ class Header extends Component {
 
               <li className="Header__navigation__models">
                 <ul>
-                  <li><Link to="/mx">MX</Link></li>
-                  <li><Link to="/supermoto">Supermoto</Link></li>
-                  <li><Link to="/enduro">Enduro</Link></li>
+                      <li><Link to="/mx">MX</Link></li>
+                      <li><Link to="/supermoto">Supermoto</Link></li>
+                      <li><Link to="/enduro">Enduro</Link></li>
                 </ul>
               </li>
             </ul>
@@ -47,7 +46,6 @@ class Header extends Component {
               <Route path="/:id" component={Bike} />
             </div>
           </nav>
-        </Router>
         <img className="Header__logo" src={logo} alt="KTM logo" />
 
       </header>
