@@ -16,8 +16,8 @@ class SubMenuHero extends Component {
 class ModelSubMenu extends Component {
     render() {
         return (
-        <div className="Model__SubMenu">
-            <div className="Model__SubMen__List">
+        <div className={this.props.location.state?'Model__SubMenu Model__SubMenu--active':'Model__SubMenu'}>
+            <div className="Model__SubMenu__List">
                 <ul>
                     {this.props.location.state?this.props.location.state.model.list.map(item=><li>{item}</li>):''}
                 </ul>
