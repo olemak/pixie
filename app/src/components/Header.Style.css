@@ -37,7 +37,8 @@
 .Header .Model__SubMenu {
     position: absolute;
     border: 1px solid red;
-    bottom: -50%;
+    top: 9rem;
     left: 0;
     right: 0;
+    background-color: rgba(230,230,230, 0.6)
 }
